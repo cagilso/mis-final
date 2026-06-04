@@ -1,0 +1,7 @@
+build/
+__pycache__/
+.vscode/
+
+# ESP-IDF generated files
+sdkconfig.old
+
