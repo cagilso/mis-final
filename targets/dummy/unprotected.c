@@ -3,26 +3,22 @@
 
 #include <stdbool.h>
 
-/*
-    *
-    *   Code-Structure: Das was mein Betreuer will
-    * 
-*/
-
-
-bool dummy_fault(void)
+__attribute__((noinline))
+bool dummy_fault_window_unprotected(void)
 {
+    volatile int value = 0;
+
     trigger_high();
 
-    volatile int value = 0x10;
-
+    value = 0x10;   
+    
     __asm__ volatile (
         "nop\n"
         "nop\n"
         "nop\n"
     );
 
-    bool correct = (value == 0x10);
+    volatile bool correct = (value == 0x10);
 
     __asm__ volatile (
         "nop\n"
