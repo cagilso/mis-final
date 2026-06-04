@@ -4,14 +4,14 @@
 #include <stdbool.h>
 
 __attribute__((noinline))
-bool dummy_fault_window_unprotected(void)
+bool dummy_fault(void)
 {
     volatile int value = 0;
 
     trigger_high();
 
     value = 0x10;   
-    
+
     __asm__ volatile (
         "nop\n"
         "nop\n"
