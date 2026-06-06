@@ -2,9 +2,11 @@
 #include <stdbool.h>
 
 /*
+ * Simple Target Class: Linear execution
+ *
  * This target models a simple multi-step security decision.
  * The operation is only considered valid if all required
- * cehcks are executed in sequenc.
+ * checks are executed in sequence.
  * 
  * Security interpretation:
  *  - step1: firmware-header was parsed
