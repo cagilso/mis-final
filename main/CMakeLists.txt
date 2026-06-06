@@ -1,6 +1,8 @@
 idf_component_register(
     SRCS
         "main.c"
+        "../targets/basic01_linear/unprotected.c"
+        "../targets/basic01_linear/protected.c"
         "../targets/anti_rollback/unprotected.c"
         "../targets/secure_boot/unprotected.c"
         "../targets/state_transition/unprotected.c"
@@ -9,6 +11,7 @@ idf_component_register(
 
     INCLUDE_DIRS
         "."
+        "../targets/basic01_linear"
         "../targets/anti_rollback"
         "../targets/secure_boot"
         "../targets/state_transition"
