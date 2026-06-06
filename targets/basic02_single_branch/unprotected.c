@@ -1,6 +1,6 @@
 #include <stdbool.h>
 #include <stdint.h>
-#include "basic01_single_branch.h"
+#include "basic02_single_branch.h"
 
 
 
@@ -11,7 +11,7 @@
  * A protected operation is only allowed if a 
  * single authorized condition is satisfied. 
  * 
- * Security interpretation:
+ * Security interpretation
  *  - unauthorized request: deny access
  *  - authorized request:   accept access
  * 
@@ -19,7 +19,7 @@
  *  - Skipping the conditional check or branch 
  *    may change the decision from deny to accept.
  * 
- * Relevance:
+ * Relevance
  *  This is the baseline case for evaluating whether the
  *  countermeasure can protect a simple control-lfow decision.
  * 
