@@ -19,6 +19,9 @@ idf_component_register(
         "../targets/complex01_function_call/unprotected.c"
         "../targets/complex01_function_call/protected.c"
 
+        "../targets/complex02_loop/unprotected.c"
+        "../targets/complex02_loop/unprotected.c"
+
         "../targets/anti_rollback/unprotected.c"
         "../targets/secure_boot/unprotected.c"
         "../targets/state_transition/unprotected.c"
@@ -36,6 +39,7 @@ idf_component_register(
         "../targets/advanced02_nested_decisions"
 
         "../targets/complex01_function_call"
+        "../targets/complex02_loop"
 
         "../targets/anti_rollback"
         "../targets/secure_boot"
