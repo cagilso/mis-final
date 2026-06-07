@@ -16,6 +16,9 @@ idf_component_register(
         "../targets/advanced02_nested_decisions/unprotected.c"
         "../targets/advanced02_nested_decisions/protected.c"
 
+        "../targets/complex01_function_call/unprotected.c"
+        "../targets/complex01_function_call/protected.c"
+
         "../targets/anti_rollback/unprotected.c"
         "../targets/secure_boot/unprotected.c"
         "../targets/state_transition/unprotected.c"
@@ -31,7 +34,9 @@ idf_component_register(
 
         "../targets/advanced01_early_exit"
         "../targets/advanced02_nested_decisions"
-        
+
+        "../targets/complex01_function_call"
+
         "../targets/anti_rollback"
         "../targets/secure_boot"
         "../targets/state_transition"
